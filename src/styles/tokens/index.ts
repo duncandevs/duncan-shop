@@ -2,12 +2,12 @@ export const colorTokens = {
     accentGreen: 'var(--color-accent-green)',
     neutral: 'var(--color-neutral)',
     pastelYellow: 'var(--color-pastel-yellow)',
-    pastelBlue: 'var(--color-pastel-blue)',
-    pastelRed: 'var(--color-pastel-red)',
+    pastelTurquoise: 'var(--color-pastel-turquoise)',
+    pastelRose: 'var(--color-pastel-rose)',
 };
 
 export const productThemeColorMap = {
-    foam: colorTokens.pastelYellow,
-    sea: colorTokens.pastelBlue,
-    fluffy: colorTokens.pastelRed,
+    yellow: colorTokens.pastelYellow,
+    turquoise: colorTokens.pastelTurquoise,
+    rose: colorTokens.pastelRose,
 };

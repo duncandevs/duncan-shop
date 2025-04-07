@@ -24,7 +24,6 @@ export const ProductCardHeader = React.forwardRef<HTMLDivElement, ProductCardHea
     </div>
 ))
 ProductCardHeader.displayName = "ProductCardHeader";
-console.log(stylex.props(styles.highlightContainer).className)
 type ProductCardHightlightBarProps = {
     color: string;
     isVisible: boolean;

@@ -37,14 +37,14 @@ export const mockProducts: Product[] = [
 export const mockProductCards = [
     {
         product_id: 'prod_1',
-        theme: 'foam'
+        theme: 'yellow'
     },
     {
         product_id: 'prod_2',
-        theme: 'sea'
+        theme: 'turquoise'
     },
     {
         product_id: 'prod_3',
-        theme: 'fluffy'
+        theme: 'rose'
     },
 ]

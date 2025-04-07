@@ -31,14 +31,14 @@ export const variants = stylex.create({
 });
 
 export const themes = stylex.create({
-    foam: {
+    yellow: {
         backgroundColor: 'var(--color-pastel-yellow)',
     },
-    sea: {
-        backgroundColor: 'var(--color-pastel-blue)',
+    turquoise: {
+        backgroundColor: 'var(--color-pastel-turquoise)',
     },
-    fluffy: {
-        backgroundColor: 'var(--color-pastel-red)',
+    rose: {
+        backgroundColor: 'var(--color-pastel-rose)',
     }
 });
 

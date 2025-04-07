@@ -3,7 +3,7 @@ import "./stylex.css";
 
 import {ProductList} from './components/ProductList';
 import {AnimatedButton} from './components/AnimatedButton';
-import {Tabs } from "radix-ui";
+import {Tabs} from "radix-ui";
 
 function App() {
   return (
