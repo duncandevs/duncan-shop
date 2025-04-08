@@ -132,11 +132,10 @@ export const ProductCardHightlightBar = ({
 );
 
 export interface ProductCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  color: string;
   onHovered?: (hovered: boolean) => void;
 }
 export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
-  ({ onHovered, color, ...props }, ref) => {
+  ({ onHovered, ...props }, ref) => {
     return (
       <div
         ref={ref}

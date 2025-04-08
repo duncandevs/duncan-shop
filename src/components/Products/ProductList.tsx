@@ -42,9 +42,10 @@ export const ProductList: React.FC<ProductListProps> = ({ products }) => {
           subscriptionDiscount,
         } = product;
         const [hovered, setIsHovered] = useState(false);
+        const formattedDescription = description + "*";
 
         return (
-          <ProductCard color={color} onHovered={setIsHovered}>
+          <ProductCard onHovered={setIsHovered}>
             <ProductCardHeader
               backgroundImg={backgroundImage}
               productImg={productImage}
@@ -54,7 +55,7 @@ export const ProductList: React.FC<ProductListProps> = ({ products }) => {
             <ProductCardBody>
               <ProductCardTitle>{name}</ProductCardTitle>
               <ProductCardDescription>
-                {description + "*"}
+                {formattedDescription}
               </ProductCardDescription>
               <ProductCardKeyIngredients keyIngredients={keyIngredients} />
             </ProductCardBody>
