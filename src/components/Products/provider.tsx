@@ -1,6 +1,6 @@
 import { createContext, useContext, useMemo } from "react";
 import { mockProducts, mockProductCardData } from "./mocks";
-import { productThemeColorMap } from "../../styles/tokens";
+import { productThemeColorMap } from "@/styles/tokens";
 import { ProductCardData, ProductCardTheme } from "./types";
 
 interface ProductDataContextValue {
