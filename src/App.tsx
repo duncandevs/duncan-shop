@@ -7,7 +7,7 @@ import { useProductData } from "@/components/Products/provider";
 function App() {
   const { products } = useProductData();
   return (
-    <div>
+    <main>
       <div className="card">
         <Tabs.Root defaultValue="product-cards">
           <div>
@@ -39,7 +39,7 @@ function App() {
           </div>
         </Tabs.Root>
       </div>
-    </div>
+    </main>
   );
 };
 export default App;
