@@ -1,4 +1,4 @@
-# 🛍️ Duncan Shop
+# 🛍️ Duncan Shop Demo
 
 A sleek, interactive frontend shop interface built with Vite + React + TypeScript, using **Stylex** for styling.
 
