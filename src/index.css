@@ -15,6 +15,11 @@
   src: url('/src/assets/fonts/HafferXH-Regular.woff2') format('woff2');
 }
 
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('/src/assets/fonts/OpenSans-Regular.ttf') format('ttf');
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -103,4 +108,8 @@ button {
   100% {
     transform: translateX(0%);
   }
+}
+
+.font-sans-regular {
+  font-family: 'OpenSans-Regular', sans-serif;
 }

@@ -23,7 +23,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({ title }) => {
         )}
       >
         <span {...stylex.props(styles.content)}>
-            <p>{title}</p>
+            <p className='font-sans-regular'>{title}</p>
         </span>
       </div>
       <div
