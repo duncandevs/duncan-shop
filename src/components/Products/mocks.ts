@@ -11,7 +11,7 @@ export const mockProducts: Product[] = [
     productImage:
       "https://res.cloudinary.com/drip-shutter-images/image/upload/v1743873129/duncan-shop/shower-product_unjdxf.webp",
     keyIngredients: ["Warm Sugar", "Vanilla", "Fresh Pancakes"],
-    subscriptionDiscount: 0.1,
+    subscriptionDiscount: 0.15,
   },
   {
     id: "prod_2",
@@ -23,7 +23,7 @@ export const mockProducts: Product[] = [
     productImage:
       "https://res.cloudinary.com/drip-shutter-images/image/upload/v1743873129/duncan-shop/foam-product_repwhf.webp",
     keyIngredients: ["Sea Salt, Beach Water, Fresh Coconut, Sprinkles"],
-    subscriptionDiscount: 0.1,
+    subscriptionDiscount: 0.15,
   },
   {
     id: "prod_3",
@@ -35,7 +35,7 @@ export const mockProducts: Product[] = [
     productImage:
       "https://res.cloudinary.com/drip-shutter-images/image/upload/v1743873129/duncan-shop/fluffy-product_jhthss.webp",
     keyIngredients: ["Fresh Berries, Rainbow Sprinkles, Fairy Floss"],
-    subscriptionDiscount: 0.1,
+    subscriptionDiscount: 0.15,
   },
 ];
 

@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as stylex from "@stylexjs/stylex";
-import { styles } from "./styles.stylex";
+import { styles } from "./styles";
 
 type AnimatedButtonProps = {
   title: string;

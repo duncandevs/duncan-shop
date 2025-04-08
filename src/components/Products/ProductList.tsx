@@ -1,5 +1,4 @@
 import { useState } from "react";
-import styles from "./styles.stylex";
 import * as stylex from "@stylexjs/stylex";
 import {
   ProductCard,
@@ -15,6 +14,15 @@ import {
   SubscribeButton,
 } from "@/components/Products/ProductButton";
 import { ProductCardData } from "@/components/Products/types";
+
+const styles = stylex.create({
+  container: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 36,
+  },
+});
+
 
 type ProductListProps = {
   products: ProductCardData[];
