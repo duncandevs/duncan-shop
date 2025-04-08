@@ -1,3 +1,1 @@
-export {
-    ProductList
-} from './ProductList.stylex'
+export { ProductList } from "./ProductList.stylex";

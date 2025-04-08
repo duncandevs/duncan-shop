@@ -1,6 +1,6 @@
 export {
-    ProductButton,
-    AddToCartButton,
-    SubscribeButton,
-    type ProductButtonTheme,
-} from './ProductButton.stylex';
+  ProductButton,
+  AddToCartButton,
+  SubscribeButton,
+  type ProductButtonTheme,
+} from "./ProductButton.stylex";

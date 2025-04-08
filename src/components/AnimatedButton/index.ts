@@ -1,1 +1,1 @@
-export { AnimatedButton } from './AnimatedButton.stylex'
+export { AnimatedButton } from "./AnimatedButton.stylex";

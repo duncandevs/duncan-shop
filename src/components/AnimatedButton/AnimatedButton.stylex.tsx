@@ -1,10 +1,10 @@
-import * as React from 'react';
-import * as stylex from '@stylexjs/stylex';
-import { styles } from './styles.stylex';
+import * as React from "react";
+import * as stylex from "@stylexjs/stylex";
+import { styles } from "./styles.stylex";
 
 type AnimatedButtonProps = {
-    title:string
-}
+  title: string;
+};
 export const AnimatedButton: React.FC<AnimatedButtonProps> = ({ title }) => {
   const [hovered, setHovered] = React.useState(false);
 
@@ -19,11 +19,11 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({ title }) => {
           styles.rect,
           styles.posOne,
           hovered ? styles.down : styles.top,
-          hovered ? styles.secondary : styles.primary
+          hovered ? styles.secondary : styles.primary,
         )}
       >
         <span {...stylex.props(styles.content)}>
-            <p className='font-sans-regular'>{title}</p>
+          <p className="font-sans-regular">{title}</p>
         </span>
       </div>
       <div
@@ -31,7 +31,7 @@ export const AnimatedButton: React.FC<AnimatedButtonProps> = ({ title }) => {
           styles.rect,
           styles.posTwo,
           hovered ? styles.top : styles.down,
-          hovered ? styles.primary : styles.secondary
+          hovered ? styles.primary : styles.secondary,
         )}
       />
     </div>

@@ -1,23 +1,23 @@
-@import './styles/tokens/colors.css';
+@import "./styles/tokens/colors.css";
 
 @font-face {
-  font-family: 'HafferXH-Bold';
-  src: url('/src/assets/fonts/HafferXH-Bold.woff2') format('woff2');
+  font-family: "HafferXH-Bold";
+  src: url("/src/assets/fonts/HafferXH-Bold.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'HafferXH-Medium';
-  src: url('/src/assets/fonts/HafferXH-Medium.woff2') format('woff2');
+  font-family: "HafferXH-Medium";
+  src: url("/src/assets/fonts/HafferXH-Medium.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'HafferXH-Regular';
-  src: url('/src/assets/fonts/HafferXH-Regular.woff2') format('woff2');
+  font-family: "HafferXH-Regular";
+  src: url("/src/assets/fonts/HafferXH-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('/src/assets/fonts/OpenSans-Regular.ttf') format('ttf');
+  font-family: "OpenSans-Regular";
+  src: url("/src/assets/fonts/OpenSans-Regular.ttf") format("ttf");
 }
 
 :root {
@@ -52,26 +52,26 @@ body {
 }
 
 h1 {
-  font-family: 'HafferXH-Medium', sans-serif;
+  font-family: "HafferXH-Medium", sans-serif;
   font-size: 3.2em;
   line-height: 1.1;
 }
 
 h2 {
-  font-family: 'HafferXH-Medium', sans-serif;
+  font-family: "HafferXH-Medium", sans-serif;
   line-height: 0;
 }
 
 p {
-  font-family: 'HafferXH-Regular', sans-serif;
+  font-family: "HafferXH-Regular", sans-serif;
   line-height: 1.1;
 }
 
 span {
-  font-family: 'HafferXH-Regular', sans-serif;
+  font-family: "HafferXH-Regular", sans-serif;
 }
 span b {
-  font-family: 'HafferXH-Bold', sans-serif;
+  font-family: "HafferXH-Bold", sans-serif;
 }
 
 button {
@@ -111,5 +111,5 @@ button {
 }
 
 .font-sans-regular {
-  font-family: 'OpenSans-Regular', sans-serif;
+  font-family: "OpenSans-Regular", sans-serif;
 }
