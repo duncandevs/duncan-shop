@@ -2,7 +2,7 @@ import * as React from "react"
 import * as stylex from '@stylexjs/stylex';
 import { variants, themes, styles } from "./styles.stylex";
 import { InfoIcon } from "lucide-react";
-import {productThemeColorMap} from '../../styles/tokens'
+import {productThemeColorMap} from '@/styles/tokens';
 
 export type ProductButtonVariant = keyof typeof variants
 export type ProductButtonTheme = keyof typeof productThemeColorMap

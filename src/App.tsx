@@ -1,11 +1,14 @@
 import './App.css';
 import "./stylex.css";
 
-import {ProductList} from './components/ProductList';
-import {AnimatedButton} from './components/AnimatedButton';
+import {ProductList} from '@/components/Products/ProductList';
+import {AnimatedButton} from '@/components/AnimatedButton';
 import {Tabs} from "radix-ui";
+import { useProductData } from './components/Products/provider';
 
 function App() {
+  const {products} = useProductData();
+
   return (
     <div>
       <header>
@@ -26,7 +29,7 @@ function App() {
           </div>
           <div>
             <Tabs.Content value="product-cards">
-              <ProductList />
+              <ProductList products={products} />
             </Tabs.Content>
 
             <Tabs.Content value="animated-button">

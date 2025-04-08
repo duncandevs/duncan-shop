@@ -1,4 +1,4 @@
-import { Product } from '../types/product';
+import { Product } from './types';
 
 export const mockProducts: Product[] = [
   {
@@ -34,7 +34,7 @@ export const mockProducts: Product[] = [
 ];
 
 // Seperates concerns btw Product and UI layer
-export const mockProductCards = [
+export const mockProductCardData = [
     {
         product_id: 'prod_1',
         theme: 'yellow'
