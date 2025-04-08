@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styles from "./styles.stylex";
 import * as stylex from '@stylexjs/stylex';
 import { 
@@ -8,10 +9,9 @@ import {
     ProductCardDescription, 
     ProductCardTitle,
     ProductCardKeyIngredients, 
-} from '../ProductCard';
-import { AddToCartButton, SubscribeButton } from '../ProductButton';
-import { useState } from "react";
-import { ProductCardData } from "../types";
+} from '@/components/Products/ProductCard';
+import { AddToCartButton, SubscribeButton } from '@/components/Products/ProductButton';
+import { ProductCardData } from "@/components/Products/types";
 
 type ProductListProps = {
     products: ProductCardData[]

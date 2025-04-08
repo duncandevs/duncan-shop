@@ -4,8 +4,8 @@ import { variants, themes, styles } from "./styles.stylex";
 import { InfoIcon } from "lucide-react";
 import { productThemeColorMap } from '@/styles/tokens';
 
-export type ProductButtonVariant = keyof typeof variants
-export type ProductButtonTheme = keyof typeof productThemeColorMap
+export type ProductButtonVariant = keyof typeof variants;
+export type ProductButtonTheme = keyof typeof productThemeColorMap;
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>{
     variant?: ProductButtonVariant;

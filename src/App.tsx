@@ -4,7 +4,7 @@ import "./stylex.css";
 import {ProductList} from '@/components/Products/ProductList';
 import {AnimatedButton} from '@/components/AnimatedButton';
 import {Tabs} from "radix-ui";
-import { useProductData } from './components/Products/provider';
+import { useProductData } from '@/components/Products/provider';
 
 function App() {
   const {products} = useProductData();

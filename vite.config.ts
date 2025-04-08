@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), styleX()],
   resolve: {
     alias: {
-      '@': './',
+      '@': '/src',
     },
   },
 })
