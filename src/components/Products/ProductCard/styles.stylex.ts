@@ -30,7 +30,7 @@ export default stylex.create({
     width: '100%',
     overflow: 'hidden',
     animationName: growAnimation,
-    animationDuration: '0.5s',
+    animationDuration: '0.25s',
     animationTimingFunction: 'ease-in-out',
     animationFillMode: 'forwards', // Keeps the final state
     backgroundColor: 'black', // fallback if color isn't passed
@@ -60,7 +60,7 @@ export default stylex.create({
     flexGrow: 1, // Ensures body covers the remaining space
   },
   title: {
-    fontSize: 32,
+    fontSize: 30,
     fontWeight: 500,
   },
   description: {

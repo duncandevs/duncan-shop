@@ -53,13 +53,20 @@ h1 {
 }
 
 h2 {
-  font-family: 'HafferXH-Regular', sans-serif;
+  font-family: 'HafferXH-Medium', sans-serif;
   line-height: 0;
 }
 
 p {
   font-family: 'HafferXH-Regular', sans-serif;
   line-height: 1.1;
+}
+
+span {
+  font-family: 'HafferXH-Regular', sans-serif;
+}
+span b {
+  font-family: 'HafferXH-Bold', sans-serif;
 }
 
 button {
