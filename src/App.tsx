@@ -1,6 +1,6 @@
 import "@/styles/App.css";
 
-import { ProductList } from "@/components/Products/ProductList";
+import { ProductCardList } from "@/components/Products/ProductCardList";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { Tabs } from "radix-ui";
 import { useProductData } from "@/components/Products/provider";
@@ -33,7 +33,7 @@ function App() {
           </div>
           <div>
             <Tabs.Content value="product-cards">
-              <ProductList products={products} />
+              <ProductCardList products={products} />
             </Tabs.Content>
 
             <Tabs.Content value="animated-button">

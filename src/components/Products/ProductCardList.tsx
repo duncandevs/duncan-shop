@@ -12,7 +12,7 @@ import {
 import {
   AddToCartButton,
   SubscribeButton,
-} from "@/components/Products/ProductButton";
+} from "@/components/Products/ProductCardButton";
 import { ProductCardData } from "@/components/Products/types";
 
 const styles = stylex.create({
@@ -23,10 +23,10 @@ const styles = stylex.create({
   },
 });
 
-type ProductListProps = {
+type ProductCardListProps = {
   products: ProductCardData[];
 };
-export const ProductList: React.FC<ProductListProps> = ({ products }) => {
+export const ProductCardList: React.FC<ProductCardListProps> = ({ products }) => {
   return (
     <div {...stylex.props(styles.container)}>
       {products?.map((product) => {

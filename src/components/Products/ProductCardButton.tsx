@@ -57,15 +57,15 @@ const styles = stylex.create({
   },
 });
 
-export type ProductButtonVariant = keyof typeof variants;
-export type ProductButtonTheme = keyof typeof productThemeColorMap;
+export type ProductCardButtonVariant = keyof typeof variants;
+export type ProductCardButtonTheme = keyof typeof productThemeColorMap;
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: ProductButtonVariant;
-  theme?: ProductButtonTheme;
+  variant?: ProductCardButtonVariant;
+  theme?: ProductCardButtonTheme;
 }
-export const ProductButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
+export const ProductCardButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, theme, ...props }, ref) => {
     return (
       <button
@@ -80,7 +80,7 @@ export const ProductButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
     );
   },
 );
-ProductButton.displayName = "ProductButton";
+ProductCardButton.displayName = "ProductCardButton";
 
 interface CartButton extends ButtonProps {
   price: number;
@@ -89,18 +89,18 @@ interface CartButton extends ButtonProps {
 export const AddToCartButton = React.forwardRef<HTMLButtonElement, CartButton>(
   ({ price, ...props }, ref) => {
     return (
-      <ProductButton variant="primary" {...props} ref={ref}>
+      <ProductCardButton variant="primary" {...props} ref={ref}>
         <span>Add to Cart</span>
         <span {...stylex.props(styles.divider)} />
         <span>${price.toFixed(2)}</span>
-      </ProductButton>
+      </ProductCardButton>
     );
   },
 );
 AddToCartButton.displayName = "AddToCartButton";
 
 export interface SubscribeButtonProps extends CartButton {
-  theme: ProductButtonTheme;
+  theme: ProductCardButtonTheme;
 }
 export const SubscribeButton = React.forwardRef<
   HTMLButtonElement,
@@ -110,14 +110,14 @@ export const SubscribeButton = React.forwardRef<
     ? price - price * subscriptionDiscount
     : price;
   return (
-    <ProductButton variant="secondary" theme={theme} {...props} ref={ref}>
+    <ProductCardButton variant="secondary" theme={theme} {...props} ref={ref}>
       <span>
         <InfoIcon />
       </span>
       <span>Subscribe</span>
       <span {...stylex.props(styles.divider)} />
       <span>${discountPrice.toFixed(2)}</span>
-    </ProductButton>
+    </ProductCardButton>
   );
 });
 SubscribeButton.displayName = "SubscribeButton";
