@@ -23,7 +23,6 @@ const styles = stylex.create({
   },
 });
 
-
 type ProductListProps = {
   products: ProductCardData[];
 };
