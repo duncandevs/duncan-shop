@@ -9,10 +9,9 @@ export interface ProductCardHeaderProps extends React.HTMLAttributes<HTMLDivElem
     isHovered?: boolean;
     color: string;
 }  
-export const ProductCardHeader = React.forwardRef<HTMLDivElement, ProductCardHeaderProps>(({ className, backgroundImg, productImg, isHovered, color, ...props }, ref) => (
+export const ProductCardHeader = React.forwardRef<HTMLDivElement, ProductCardHeaderProps>(({ backgroundImg, productImg, isHovered, color, ...props }, ref) => (
     <div 
         ref={ref}
-        className={className}
         {...props}
         {...stylex.props(styles.header)}
         style={{
@@ -41,11 +40,10 @@ export interface ProductCardProps extends React.HTMLAttributes<HTMLDivElement>{
 export const ProductCard = React.forwardRef<
   HTMLDivElement,
   ProductCardProps
->(({ className, onHovered, color, ...props }, ref) => {
+>(({ onHovered, color, ...props }, ref) => {
     return (
         <div
             ref={ref}
-            className={className}
             onMouseEnter={() => onHovered && onHovered(true)}
             onMouseLeave={() => onHovered && onHovered(false)}
             {...stylex.props(styles.container)}
@@ -60,10 +58,9 @@ export interface ProductCardBodyProps extends React.HTMLAttributes<HTMLDivElemen
 export const ProductCardBody = React.forwardRef<
   HTMLDivElement,
   ProductCardBodyProps
->(({ className, ...props }, ref) => (
+>(({ ...props }, ref) => (
   <div
     ref={ref}
-    className={className}
     {...stylex.props(styles.body)}
     {...props}>
         {props.children}
@@ -76,10 +73,9 @@ export interface ProductCardTitleProps extends React.HTMLAttributes<HTMLParagrap
 export const ProductCardTitle = React.forwardRef<
   HTMLParagraphElement,
   ProductCardTitleProps
->(({ className, ...props }, ref) => (
+>(({ ...props }, ref) => (
     <h2
     ref={ref}
-    className={className}
     {...stylex.props(styles.title)}
     {...props}>
         {props.children}
@@ -91,10 +87,9 @@ export interface ProductCardDescriptionProps extends React.HTMLAttributes<HTMLPa
 export const ProductCardDescription = React.forwardRef<
   HTMLParagraphElement,
   ProductCardDescriptionProps
->(({ className, ...props }, ref) => (
+>(({ ...props }, ref) => (
     <p
     ref={ref}
-    className={className}
     {...stylex.props(styles.description)}
     {...props}>
         {props.children}
@@ -103,18 +98,17 @@ export const ProductCardDescription = React.forwardRef<
 ProductCardDescription.displayName = "ProductCardDescription";
 
 export interface ProductCardKeyIngredientsProps extends React.HTMLAttributes<HTMLDivElement>{
-    keywords: string[]
+    keyIngredients: string[]
 }
 export const ProductCardKeyIngredients = React.forwardRef<
   HTMLDivElement,
   ProductCardKeyIngredientsProps
->(({ className, keywords, ...props }, ref) => (
+>(({ keyIngredients, ...props }, ref) => (
   <div
     ref={ref}
-    className={className}
-    {...stylex.props(styles.keywords)}
+    {...stylex.props(styles.keyIngredients)}
     {...props}>
-        <span><b>Keywords: </b>{keywords?.join(', ')}</span>
+        <span><b>Key Ingredients: </b>{keyIngredients?.join(', ')}</span>
     </div>
 ))
 ProductCardKeyIngredients.displayName = "ProductCardKeyIngredients";
@@ -125,13 +119,12 @@ export interface ProductCardFooterProps extends React.HTMLAttributes<HTMLDivElem
 export const ProductCardFooter = React.forwardRef<
   HTMLDivElement,
   ProductCardFooterProps
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={className}
-    {...stylex.props(styles.footer)}
-    {...props}>
-        {props.children}
+>(({ ...props }, ref) => (
+    <div
+        ref={ref}
+        {...stylex.props(styles.footer)}
+        {...props}>
+            {props.children}
     </div>
 ))
 ProductCardFooter.displayName = "ProductCardFooter";

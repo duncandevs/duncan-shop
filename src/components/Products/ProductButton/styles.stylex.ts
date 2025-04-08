@@ -10,6 +10,7 @@ export const variants = stylex.create({
         borderRadius: 36,
         color: 'white',
         backgroundColor: 'black',
+        gap:8,
     },
     primary: {
         color: 'black',

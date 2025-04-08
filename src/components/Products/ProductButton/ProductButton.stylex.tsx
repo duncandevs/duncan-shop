@@ -2,7 +2,7 @@ import * as React from "react"
 import * as stylex from '@stylexjs/stylex';
 import { variants, themes, styles } from "./styles.stylex";
 import { InfoIcon } from "lucide-react";
-import {productThemeColorMap} from '@/styles/tokens';
+import { productThemeColorMap } from '@/styles/tokens';
 
 export type ProductButtonVariant = keyof typeof variants
 export type ProductButtonTheme = keyof typeof productThemeColorMap
@@ -27,31 +27,35 @@ export const ProductButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
 );
 ProductButton.displayName = "ProductButton";
 
-
-export const AddToCartButton = React.forwardRef<HTMLButtonElement, ButtonProps>(
-    ({...props }, ref) => {
+interface CartButton extends ButtonProps {
+    price: number;
+    subscriptionDiscount?: number;
+}
+export const AddToCartButton = React.forwardRef<HTMLButtonElement, CartButton>(
+    ({price, ...props }, ref) => {
         return (
             <ProductButton variant="primary" {...props} ref={ref}>
                 <span>Add to Cart</span>
                 <span {...stylex.props(styles.divider)}/>
-                <span>$50.00</span>
+                <span>${price.toFixed(2)}</span>
             </ProductButton>
         )
     }
 );
 AddToCartButton.displayName = "AddToCartButton";
 
-export interface SubscribeButtonProps extends ButtonProps{
+export interface SubscribeButtonProps extends CartButton{
     theme: ProductButtonTheme;
 }
 export const SubscribeButton = React.forwardRef<HTMLButtonElement, SubscribeButtonProps>(
-    ({theme, ...props}, ref) => {
+    ({price, subscriptionDiscount, theme, ...props}, ref) => {
+        const discountPrice = subscriptionDiscount? price - (price * subscriptionDiscount) : price;
         return (
             <ProductButton variant="secondary" theme={theme} {...props} ref={ref}>
-                <InfoIcon />
+                <span><InfoIcon /></span>
                 <span>Subscribe</span>
                 <span {...stylex.props(styles.divider)} />
-                <span>$41.50</span>
+                <span>${discountPrice.toFixed(2)}</span>
             </ProductButton>
         )
     }

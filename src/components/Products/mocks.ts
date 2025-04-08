@@ -33,7 +33,7 @@ export const mockProducts: Product[] = [
   },
 ];
 
-// Seperates concerns btw Product and UI layer
+// Seperates concerns btw Product and UI data which may come from contenful or other source
 export const mockProductCardData = [
     {
         product_id: 'prod_1',

@@ -9,7 +9,7 @@ import {
     ProductCardTitle,
     ProductCardKeyIngredients, 
 } from '../ProductCard';
-import { AddToCartButton, SubscribeButton } from '../../Products/ProductButton';
+import { AddToCartButton, SubscribeButton } from '../ProductButton';
 import { useState } from "react";
 import { ProductCardData } from "../types";
 
@@ -20,8 +20,18 @@ export const ProductList: React.FC<ProductListProps> = ({ products }) => {
     return (
         <div {...stylex.props(styles.container)}>
             {products?.map((product)=>{
+                const { 
+                    theme, 
+                    color, 
+                    backgroundImage, 
+                    productImage, 
+                    name, 
+                    description, 
+                    keyIngredients, 
+                    price,
+                    subscriptionDiscount
+                } = product;
                 const [hovered, setIsHovered] = useState(false);
-                const { theme, color, backgroundImage, productImage, name, description, keyIngredients } = product;
 
                 return <ProductCard color={color} onHovered={setIsHovered}>
                     <ProductCardHeader           
@@ -33,11 +43,11 @@ export const ProductList: React.FC<ProductListProps> = ({ products }) => {
                     <ProductCardBody>
                         <ProductCardTitle>{name}</ProductCardTitle>
                         <ProductCardDescription>{description + '*'}</ProductCardDescription>
-                        <ProductCardKeyIngredients keywords={keyIngredients} />
+                        <ProductCardKeyIngredients keyIngredients={keyIngredients} />
                     </ProductCardBody>
                     <ProductCardFooter>
-                        <AddToCartButton />
-                        <SubscribeButton theme={theme} />
+                        <AddToCartButton price={price}/>
+                        <SubscribeButton price={price} subscriptionDiscount={subscriptionDiscount} theme={theme} />
                     </ProductCardFooter>
                 </ProductCard>}
             )}

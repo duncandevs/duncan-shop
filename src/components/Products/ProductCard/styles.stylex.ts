@@ -14,6 +14,7 @@ export default stylex.create({
     height: 832,
     backgroundColor: 'white',
     color: 'black',
+    cursor: 'pointer',
     ':hover': {
       boxShadow: '4px 4px 16px rgba(216, 216, 216, 0.74)',
       transitionProperty: 'transform',
@@ -66,7 +67,7 @@ export default stylex.create({
     fontSize: 20,
     fontWeight: 300,
   },
-  keywords:{
+  keyIngredients:{
     display: 'flex',
     flexDirection: 'row',
     justifyItems: 'center',
