@@ -11,6 +11,6 @@ A sleek, interactive frontend shop interface built with Vite + React + TypeScrip
 - 🧠 [TypeScript](https://www.typescriptlang.org/)
 - 🎨 [Stylex](https://stylexjs.com/) – atomic CSS-in-JS styling
 - 🧩 [Radix UI](https://www.radix-ui.com/) – unstyled, accessible components
-- 🎯 Deployed on [Vercel](https://vercel.com)
+- 🎯 Deployed on [Vercel - Duncan's Shop](https://duncan-shop.vercel.app/)
 
 ---
