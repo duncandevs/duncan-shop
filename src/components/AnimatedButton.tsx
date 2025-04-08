@@ -30,15 +30,15 @@ const styles = stylex.create({
     cursor: "default",
   },
   primary: {
-    color: "#C2F63E",
-    backgroundColor: "#343B49",
+    color: "var(--color-animated-button-accent)",
+    backgroundColor: "var(--color-animated-button-default)",
   },
   secondary: {
     transitionProperty: "backgroundColor",
     transitionDuration: "0.25s",
     transitionTimingFunction: "ease-out",
-    color: "#343B49",
-    backgroundColor: "white",
+    color: "var(--color-animated-button-default)",
+    backgroundColor: "var(--color-animated-button-offset)",
   },
   posOne: {
     zIndex: 2,
