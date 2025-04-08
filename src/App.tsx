@@ -1,5 +1,4 @@
 import "@/styles/App.css";
-
 import { ProductCardList } from "@/components/Products/ProductCardList";
 import { AnimatedButton } from "@/components/AnimatedButton";
 import { Tabs } from "radix-ui";
@@ -7,10 +6,8 @@ import { useProductData } from "@/components/Products/provider";
 
 function App() {
   const { products } = useProductData();
-
   return (
     <div>
-      <header></header>
       <div className="card">
         <Tabs.Root defaultValue="product-cards">
           <div>
@@ -44,6 +41,5 @@ function App() {
       </div>
     </div>
   );
-}
-
+};
 export default App;

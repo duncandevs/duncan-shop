@@ -5,7 +5,7 @@ import { ProductCardData, ProductCardTheme } from "./types";
 
 interface ProductDataContextValue {
   products: ProductCardData[];
-}
+};
 
 const ProductDataContext = createContext<ProductDataContextValue | undefined>({
   products: [],
